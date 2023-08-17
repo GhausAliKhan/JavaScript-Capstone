@@ -1,6 +1,7 @@
 import './style.css';
 import icon from './assets/pageIcon.png';
 import { fetchApi } from './modules/Api.js';
+import displayMenu from './modules/popupMenu.js';
 
 const container = document.getElementById('cardContainer');
 const headerIcon = document.querySelector('#pageIcon');
@@ -9,7 +10,7 @@ headerIcon.classList.add('icon');
 
 container.addEventListener('click', (e) => {
   if (e.target.tagName === 'BUTTON' && e.target.textContent === 'Comment') {
-    // displayMenu(e.target.id);
+    displayMenu(e.target.id);
   }
 });
 
