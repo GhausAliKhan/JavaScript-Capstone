@@ -9,7 +9,7 @@ headerIcon.classList.add('icon');
 
 container.addEventListener('click', (e) => {
   if (e.target.tagName === 'BUTTON' && e.target.textContent === 'Comment') {
-    displayMenu(e.target.id);
+    // displayMenu(e.target.id);
   }
 });
 
