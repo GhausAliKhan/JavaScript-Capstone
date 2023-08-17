@@ -14,6 +14,136 @@ header {
   padding: 0 8%;
 }
 
+.card {
+  width: 350px;
+  border: 3px solid black;
+  border-radius: 10px;
+  margin: 10px;
+}
+
+.img-container {
+  height: 200px;
+  overflow: hidden;
+}
+
+img {
+  width: 100%;
+  object-fit: cover;
+}
+
+#cardContainer {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  justify-content: space-evenly;
+  background: #eee;
+  gap: 50px 10px;
+  padding: 100px;
+  margin-bottom: -50px;
+}
+
+.iconDiv {
+  display: flex;
+  justify-content: center;
+}
+
+.icon {
+  width: 100px;
+}
+
+.headerList {
+  display: flex;
+  list-style: none;
+  gap: 50px;
+}
+
+.headerListItem {
+  font-size: 25px;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+  color: #fff;
+}
+
+.like-btn,
+.comment-btn {
+  background-color: #a38500;
+  color: white;
+  border: none;
+  height: 50px;
+  padding: 10px 20px;
+  margin: 3px 3px;
+  font-size: 18px;
+  border-radius: 5px;
+}
+
+.comment-btn {
+  background-color: #2b70a8;
+}
+
+h3 {
+  text-align: center;
+  font-weight: bold;
+  font-size: 32px;
+}
+
+.movie {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.infoDiv {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+  width: 360px;
+}
+
+.movieTitle {
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.movieInfo {
+  font-size: 22px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 300px;
+  height: 200px;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+
+.fName,
+.fComment {
+  border: 1px solid #bbb;
+  border-radius: 3px;
+  padding-left: 5px;
+}
+
+.fName {
+  height: 24px;
+}
+
+.fComment {
+  font-family: "Times New Roman", Times, serif;
+  resize: none;
+  height: 100px;
+  padding-top: 4px;
+  font-size: 15px;
+}
+
 footer {
   background-color: #000;
   text-align: center;
