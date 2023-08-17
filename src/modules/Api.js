@@ -1,3 +1,6 @@
+import { getLikeCount, handleLike } from './Likes.js';
+import countItems from './itemsCounter.js';
+
 const container = document.getElementById('cardContainer');
 const createCard = (json) => {
   // Created a Div with class card
@@ -21,6 +24,10 @@ const createCard = (json) => {
   likeBtn.innerHTML = '<i class="far fa-heart"></i>';
   likeBtn.id = json.id;
 
+  const likeCount = document.createElement('span');
+  likeCount.className = 'like-count';
+  likeCount.id = json.id;
+
   const commentBtn = document.createElement('button');
   commentBtn.className = 'comment-btn';
   commentBtn.textContent = 'Comment';
@@ -31,11 +38,19 @@ const createCard = (json) => {
   card.appendChild(title);
   card.appendChild(imgContainer);
   card.appendChild(likeBtn);
+  card.appendChild(likeCount);
   card.appendChild(commentBtn);
   container.appendChild(card);
-};
 
-// Fetching Api
+  likeBtn.addEventListener('click', () => {
+    handleLike(json.id);
+  });
+
+  // Call the function to retrieve and update the like count
+  getLikeCount(json.id);
+  countItems();
+};
+// eslint-disable-next-line import/no-mutable-exports
 let arr = [];
 const fetchApi = async () => {
   const response = await fetch('https://api.tvmaze.com/shows');
@@ -48,4 +63,4 @@ const fetchApi = async () => {
     });
   }
 };
-export default { fetchApi, arr };
+export { fetchApi, arr };
