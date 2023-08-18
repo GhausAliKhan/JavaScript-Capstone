@@ -1,0 +1,232 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+header {
+  justify-content: space-between;
+  align-items: center;
+  background: #000;
+  display: flex;
+  color: #fff;
+  height: 125px;
+  padding: 0 8%;
+}
+
+.card {
+  width: 350px;
+  border: 3px solid black;
+  border-radius: 10px;
+  margin: 10px;
+}
+
+.img-container {
+  height: 200px;
+  overflow: hidden;
+}
+
+img {
+  width: 100%;
+  object-fit: cover;
+}
+
+#cardContainer {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  justify-content: space-evenly;
+  background: #eee;
+  gap: 50px 10px;
+  padding: 100px;
+  margin-bottom: -50px;
+}
+
+.iconDiv {
+  display: flex;
+  justify-content: center;
+}
+
+.icon {
+  width: 100px;
+}
+
+.headerList {
+  display: flex;
+  list-style: none;
+  gap: 50px;
+}
+
+.headerListItem {
+  font-size: 25px;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+  color: #fff;
+}
+
+.like-btn,
+.comment-btn {
+  background-color: #a38500;
+  color: white;
+  border: none;
+  height: 50px;
+  padding: 10px 20px;
+  margin: 3px 3px;
+  font-size: 18px;
+  border-radius: 5px;
+}
+
+.comment-btn {
+  background-color: #2b70a8;
+}
+
+h3 {
+  text-align: center;
+  font-weight: bold;
+  font-size: 32px;
+}
+
+.movie {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.infoDiv {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+  width: 360px;
+}
+
+.movieTitle {
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.movieInfo {
+  font-size: 22px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 300px;
+  height: 200px;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+
+.fName,
+.fComment {
+  border: 1px solid #bbb;
+  border-radius: 3px;
+  padding-left: 5px;
+}
+
+.fName {
+  height: 24px;
+}
+
+.fComment {
+  font-family: "Times New Roman", Times, serif;
+  resize: none;
+  height: 100px;
+  padding-top: 4px;
+  font-size: 15px;
+}
+
+@media (min-width: 600px) {
+  .popupMenu {
+    left: 10%;
+    right: 10%;
+  }
+
+  .exitBtn {
+    left: 15%;
+    right: 15%;
+  }
+}
+
+@media (min-width: 900px) {
+  .popupMenu {
+    left: 25%;
+    right: 25%;
+  }
+
+  .exitBtn {
+    left: 27%;
+    right: 23%;
+  }
+}
+
+.popupMenuBackground {
+  background: transparent;
+  backdrop-filter: blur(5px);
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 999;
+}
+
+.popupMenu {
+  position: fixed;
+  top: 20px;
+  bottom: 20px;
+  left: 5%;
+  right: 5%;
+  background-color: #bbb;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-y: scroll;
+}
+
+.exitBtn {
+  width: 25px;
+  height: 25px;
+  border: none;
+  position: fixed;
+  top: 45px;
+  left: 90%;
+}
+
+.pMargin {
+  margin: 0;
+}
+
+.popupMenuImg {
+  margin-top: 10px;
+  height: 230px;
+  border-radius: 20px;
+}
+
+.submitBtn {
+  width: 80px;
+  padding: 5px 0;
+  border-radius: 6px;
+  border: 1px solid #bbb;
+  background-color: white;
+}
+
+.submitBtn:active {
+  background-color: rgb(230, 230, 230);
+}
+
+footer {
+  background-color: #000;
+  text-align: center;
+  color: #fff;
+  font-size: 25px;
+  padding: 25px;
+}

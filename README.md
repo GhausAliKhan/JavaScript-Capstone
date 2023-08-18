@@ -64,6 +64,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
+- [Presentation Link](https://drive.google.com/file/d/136PouyydQKlDGFAVQxTkvXiadOlR3Ugk/view?usp=sharing)
 - [Live Demo Link](https://ghausalikhan.github.io/JavaScript-Capstone/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
